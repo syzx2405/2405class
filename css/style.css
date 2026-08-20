@@ -474,80 +474,17 @@ ul { list-style: none; }
     linear-gradient(180deg, var(--bg) 0%, #f0f2f7 100%);
 }
 
-.memories-card {
-  max-width: 780px;
-  margin: 0 auto;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 40px 40px 34px;
-  text-align: center;
-  box-shadow: var(--shadow-lg);
-  position: relative;
-  overflow: hidden;
-}
-
-.memories-card::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
-}
-
-.memories-frame {
-  position: relative;
-  display: inline-block;
-  max-width: 100%;
-  border-radius: 16px;
-  padding: 10px;
-  background: linear-gradient(135deg, var(--navy-2), var(--navy-3));
-  box-shadow: 0 16px 40px rgba(10, 25, 48, 0.28);
-}
-
-.memories-photo {
-  display: block;
-  width: 100%;
+.memories-empty {
   max-width: 560px;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.memories-badge {
-  position: absolute;
-  right: 20px; bottom: 20px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 10px 22px;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: var(--gold-light);
-  background: rgba(10, 25, 48, 0.78);
-  border: 2px solid var(--gold);
-  border-radius: 50px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(4px);
-  animation: badgeGlow 3s ease-in-out infinite;
-}
-
-@keyframes badgeGlow {
-  0%, 100% { box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35); }
-  50% { box-shadow: 0 8px 30px rgba(201, 162, 75, 0.55); }
-}
-
-.memories-caption {
-  margin-top: 24px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  text-align: center;
   font-size: 15px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: var(--text-light);
-}
-
-@media (max-width: 720px) {
-  .memories-card { padding: 24px 18px 26px; }
-  .memories-badge { right: 12px; bottom: 12px; font-size: 17px; padding: 8px 16px; letter-spacing: 2px; }
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px dashed var(--border);
+  border-radius: 14px;
 }
 
 /* ============ 师生寄语 ============ */
